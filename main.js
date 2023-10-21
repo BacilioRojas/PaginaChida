@@ -1,4 +1,4 @@
- var form =document.querySelector('form')
+var form =document.querySelector('form')
   var inputs = form.querySelectorAll('input')
   var boton = form.querySelector('button')
   var pR = document.querySelector('#resultado')
@@ -36,13 +36,17 @@
             rama =[]
             for(var j=0;j<arbolOp[i].length-1;j++){
               aux = p*arbolOp[i][j]+(1-p)*arbolOp[i][j+1]
+              
               if(inputs[8].checked){
-                aux = Math.max(aux,((-1)**op)*(k-arbol[inputs[2].value-i-1][j]))
+                console.log(aux)
+                aux = Math.max(aux,((-1)**inputs[7].value)*(inputs[4].value-arbol[inputs[2].value-i-1][j]))
+                
               }
               rama.push(aux)
             }
               arbolOp.push(rama)
           }
+            console.log(arbolOp)
             console.log(arbolOp[inputs[2].value])
             pR.innerText ="El valor de la opcion es "+arbolOp[inputs[2].value]
   }
