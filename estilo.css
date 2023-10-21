@@ -1,1 +1,40 @@
-
+*{
+       font-size:95%
+     }
+     
+     input{
+       width : 15%;
+       text-align: center;
+     }
+     section{
+       display:flex
+       
+     }
+     .etiquetas, .inputs{
+       flex:1
+     }
+     input{
+       display:block
+     }
+     #calculadora{
+       background-color:papayawhip
+     }
+     #boton{
+       display:flex;
+       justify-content:center;
+       align-content:center;
+     }
+     select{
+       display: flex
+     }
+     .T{
+       display:inline
+     }
+     #calculadora{
+       border:2em;
+       border-radius:12%;
+       padding: 1em
+     }
+     label{
+       display:block
+     }
