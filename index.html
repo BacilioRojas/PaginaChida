@@ -7,13 +7,48 @@
     <link type="text/css" rel="stylesheet" src = "estilo.css">
 </head>
 <body>
+  <div id="calculadora">
+  <form>
+    <section>
+    <div class="etiquetas"><label>Tiempo</label>
+    <label>Tasa de interes</lable>
+    <label>Ramas</lable>
+    <label>Valor del subyacente hoy</lable>
+    <label>Precio de ejercicio</lable>
+    <label>Proporcion de subida</lable>
+    <label>Proporcion de bajada</lable>
+    <label>Tipo de opcion</lable>
+    <label>¿Americana o Europea?</label>
+    </div>
     
-    <form>
-    <input id="T" value="1.5"><input id="r" value="0.05"><input id="n" value="3"><input id="s0" value="100"><input id="k" value="100"><input id="u" value="1.2">
-    <input id="d" value="0.8"><input id="op" value="0"><input type="checkbox" id="amer">
-    <button>Calcular</button>
+    <div class="inputs">
+    
+      <div><input id="T" value="1.5" class="T">
+        <select class="T">
+          <option value="1">Años</option>
+          <option value="1/12">Meses</option>
+        </select></div>
+    <input id="r" value="0.05">
+    <input id="n" value="3">
+    <input id="s0" value="100">
+    <input id="k" value="100">
+    <input id="u" value="1.2">
+    <input id="d" value="0.8">
+      
+      <select>
+        <option value="0">Put</option>
+        <option value="1">Call</option>
+      </select>
+      <select>
+        <option value="false">Europea</option>
+        <option value="true">Americana</option>
+      </select>
+   </section>
+    <div id="boton"><button>Calcular</button></div>
   </form>
-  <p id="resultado"></p>
+  <p id="resultado"></p></div>
+
+    
     <script src="main.js"></script>
 </body>
 </html>
