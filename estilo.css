@@ -1,40 +1,79 @@
-*{
-       font-size:95%
-     }
-     
-     input{
-       width : 15%;
-       text-align: center;
-     }
-     section{
-       display:flex
-       
-     }
-     .etiquetas, .inputs{
-       flex:1
-     }
-     input{
-       display:block
-     }
-     #calculadora{
-       background-color:papayawhip
-     }
-     #boton{
-       display:flex;
-       justify-content:center;
-       align-content:center;
-     }
-     select{
-       display: flex
-     }
-     .T{
-       display:inline
-     }
-     #calculadora{
-       border:2em;
-       border-radius:12%;
-       padding: 1em
-     }
-     label{
-       display:block
-     }
+* {
+      font-size: 95%;
+    }
+
+    .panel {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .panel-label {
+      flex: 1;
+      text-align: left;
+      padding-right: 10px;
+    }
+
+    .panel-input {
+      flex: 1;
+    }
+
+    input {
+      width: 35%;
+      text-align: center;
+    }
+
+    #calculadora {
+      background-color: papayawhip;
+      border: 2em solid transparent;
+      border-radius: 12%;
+      padding: 1em;
+      margin-block-start: 10px
+    }
+
+    label {
+      display: block;
+    }
+
+    #boton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    select {
+      display: flex;
+    }
+
+    .T {
+      display: inline;
+    }
+  /* Estilos para el encabezado */
+header {
+  background-color: #e7cda7; /* Fondo gris oscuro */
+
+  padding: 20px; /* Espaciado interior */
+  margin-bottom: 40 px
+  border-radius: 12%;
+  
+}
+
+h1 {
+  margin: 0; /* Elimina el margen superior e inferior del título */
+}
+
+nav ul {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0;
+}
+
+nav li {
+  display: inline; /* Mostrar elementos de lista en línea (uno al lado del otro) */
+  margin-right: 20px; /* Espaciado entre elementos de la lista */
+}
+
+nav a {
+  text-decoration: none; /* Quita la decoración de enlace (subrayado por defecto) */
+  color: #fff; /* Texto enlace blanco */
+}
